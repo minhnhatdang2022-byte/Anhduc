@@ -2,41 +2,38 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>Demo bay bay</title>
+  <title>Bay quanh màn hình</title>
   <style>
     body {
       margin: 0;
+      width: 100vw;
       height: 100vh;
       background: black;
       overflow: hidden;
       font-family: Arial, sans-serif;
     }
 
-    .fly-text {
+    .float-text {
       position: absolute;
-      color: #00ffcc;
+      color: #ff00ff;
       font-size: 32px;
       font-weight: bold;
-      white-space: nowrap;
-      animation: fly 10s linear infinite;
-      text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+      text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+      animation: floatAround 8s ease-in-out infinite;
     }
 
-    @keyframes fly {
-      0% {
-        transform: translateX(-100%);
-        top: 40%;
-      }
-      100% {
-        transform: translateX(100vw);
-        top: 40%;
-      }
+    @keyframes floatAround {
+      0%   { top: 40%; left: 45%; }
+      25%  { top: 20%; left: 60%; }
+      50%  { top: 50%; left: 70%; }
+      75%  { top: 60%; left: 30%; }
+      100% { top: 40%; left: 45%; }
     }
   </style>
 </head>
 <body>
-  <div class="fly-text">
-    🚀 Đây chỉ là câu đùa vui thôi, đừng tin nha 😆
+  <div class="float-text">
+    😎 Đây là câu đùa vui bay lượn khắp màn hình ✨
   </div>
 </body>
 </html>
