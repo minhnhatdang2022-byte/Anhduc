@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Demo bay bay</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: black;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+
+    .fly-text {
+      position: absolute;
+      color: #00ffcc;
+      font-size: 32px;
+      font-weight: bold;
+      white-space: nowrap;
+      animation: fly 10s linear infinite;
+      text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+    }
+
+    @keyframes fly {
+      0% {
+        transform: translateX(-100%);
+        top: 40%;
+      }
+      100% {
+        transform: translateX(100vw);
+        top: 40%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="fly-text">
+    🚀 Đây chỉ là câu đùa vui thôi, đừng tin nha 😆
+  </div>
+</body>
+</html>
